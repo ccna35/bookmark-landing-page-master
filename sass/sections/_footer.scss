@@ -1,0 +1,36 @@
+@use "../custom" as *;
+
+footer {
+  background-color: $dark;
+  @include media-breakpoint-down(md) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .footer__logo {
+    @include media-breakpoint-down(md) {
+      display: grid;
+      place-items: center;
+    }
+  }
+  ul {
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem !important;
+      gap: 1rem;
+    }
+    li {
+      a {
+        font-size: 0.9rem;
+        @include media-breakpoint-down(md) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .footer_icons {
+    display: flex;
+    gap: 2rem;
+  }
+}

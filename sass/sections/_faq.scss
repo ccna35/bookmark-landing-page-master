@@ -1,0 +1,16 @@
+@use "../custom" as *;
+
+.faq {
+  .bg-primary {
+    background-color: $primary;
+  }
+  .accordion {
+    border-bottom: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+    max-width: 40rem;
+    margin: auto;
+    button {
+      box-shadow: 0 0;
+    }
+  }
+}

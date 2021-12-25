@@ -1,21 +1,32 @@
 @use "../custom" as *;
 
 .download {
+  .col {
+    display: grid;
+    place-items: center;
+  }
   .card {
-    min-height: 20.7rem;
+    min-height: 22rem;
     text-align: center;
     border: none;
     box-shadow: 0px 10px 14px 0px #dee2e6;
     border-radius: 1rem;
-    // @include media-breakpoint-down(sm) {
-    //   margin-top: 0 !important;
-    // }
+    position: relative;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 3rem;
+    }
     .card-body {
       padding: 0;
     }
-    .card-img-top {
-      width: 7rem;
-      margin: 2rem auto;
+    .card-img-container {
+      max-height: 9rem;
+      display: grid;
+      place-items: center;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      .card-img-top {
+        width: 7rem;
+      }
     }
     .card-text {
       font-size: 0.9rem;
@@ -23,8 +34,10 @@
     }
     .btn__container {
       padding: 1.5rem;
-      //   border-top: 3px dotted #dee2e6;
-      position: relative;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
       &::before {
         content: "";
         position: absolute;
@@ -45,6 +58,16 @@
         width: 100%;
         font-size: 0.9rem;
       }
+    }
+  }
+  .card-two {
+    @include media-breakpoint-up(xl) {
+      transform: translateY(2rem);
+    }
+  }
+  .card-three {
+    @include media-breakpoint-up(xl) {
+      transform: translateY(4rem);
     }
   }
 }
