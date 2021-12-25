@@ -1,11 +1,6 @@
 @use "../custom" as *;
 
 .features {
-  ul {
-    @include media-breakpoint-down(sm) {
-      justify-content: center;
-    }
-  }
   .row {
     gap: 4rem;
   }
@@ -28,16 +23,48 @@
   }
   ul {
     width: fit-content;
+    border-bottom: 1px solid #dee2e6;
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+    }
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      border-bottom: 1px solid #dee2e6;
+      border-top: 1px solid #dee2e6;
+      width: 100%;
+    }
   }
+
   .nav-link {
+    width: 100%;
     color: $light;
+    border: none;
+    position: relative;
     &.active {
-      border-color: transparent;
-      border-bottom: 3px solid $secondary;
+      background-color: transparent;
+      font-weight: 500;
+      @include media-breakpoint-down(md) {
+        border-bottom: 1px solid #dee2e6;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $secondary;
+        @include media-breakpoint-down(md) {
+          width: 80%;
+        }
+      }
     }
     &:hover {
-      border: none;
       color: $secondary;
+    }
+    @include media-breakpoint-down(md) {
+      border-bottom: 1px solid #dee2e6;
     }
   }
 }
