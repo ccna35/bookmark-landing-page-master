@@ -1,23 +1,15 @@
-// Primary colors
+@use "./custom";
 
-$primary: hsl(231, 69%, 60%);
-$secondary: hsl(0, 94%, 66%);
+// Importing components
 
-$navbar-light-hover-color: $secondary;
+@use "./components/buttons";
+@use "./components/animations";
+@use "./components/mixins";
+@use "./components/typoghraphy";
+@use "./components/variables";
 
-// Neutral colors
+// Importing sections
 
-$light: hsl(229, 8%, 60%);
-$dark: hsl(229, 31%, 21%);
-
-// Navbar toggler icon
-
-$navbar-light-toggler-icon-bg: url("../images/icon-hamburger.svg");
-$navbar-light-toggler-border-color: 0;
-
-// Typoghraphy
-
-$font-family-sans-serif: "Rubik", sans-serif;
-$font-weight-bold: 500;
-
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@use "./sections/navbar";
+@use "./sections/hero";
+@use "./sections/features";

@@ -1,0 +1,65 @@
+// Primary colors
+
+$blue: hsl(231, 69%, 60%);
+$red: hsl(0, 94%, 66%);
+
+$primary: $blue;
+$secondary: $red;
+
+$navbar-light-hover-color: $secondary;
+
+// Neutral colors
+
+$light: rgb(145, 148, 161);
+$dark: hsl(229, 31%, 21%);
+
+// Navbar toggler icon
+
+$navbar-light-toggler-icon-bg: url("../sass/images/icon-hamburger.svg");
+$navbar-light-toggler-border-color: 0;
+
+// Typoghraphy
+
+$font-family-sans-serif: "Rubik", sans-serif;
+$font-weight-bold: 500;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// Margin and padding
+
+$spacers: map-merge(
+  $spacers,
+  (
+    6: $spacer * 4,
+    7: $spacer * 5,
+    8: $spacer * 6,
+    9: $spacer * 7,
+    10: $spacer * 8,
+    11: $spacer * 9,
+    12: $spacer * 10,
+  )
+);
+
+// Font sizes for dispaly
+
+$display-font-sizes: map-merge(
+  $display-font-sizes,
+  (
+    7: 2rem,
+    8: 1.5rem,
+    9: 1rem,
+    10: 0.5rem,
+  )
+);
+
+// breakpoints
+
+// $container-max-widths: map-merge(
+//   (
+//     xs: 0,
+//   ),
+//   $container-max-widths
+// );
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

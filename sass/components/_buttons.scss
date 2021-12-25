@@ -1,0 +1,32 @@
+@use "../custom" as *;
+
+.mynav_btn {
+  background-color: $secondary;
+  color: white;
+}
+
+.mynav_btn:hover {
+  background-color: white;
+  border-color: $secondary;
+  color: $secondary;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border: 2px solid transparent;
+  &:hover {
+    background-color: white;
+    color: $primary;
+  }
+}
+
+.btn-secondary {
+  background-color: #f7f7f7;
+  border: 2px solid transparent;
+  box-shadow: 0 0.325rem 0.55rem rgb(0 0 0 / 8%) !important;
+  &:hover {
+    background-color: #f7f7f7;
+    border-color: $dark;
+    box-shadow: 0 0rem 0rem rgb(0 0 0 / 15%) !important;
+  }
+}

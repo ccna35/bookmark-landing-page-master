@@ -1,0 +1,9 @@
+@use "../custom" as *;
+
+.text-secondary {
+  color: $light !important;
+}
+
+.heading {
+  color: $dark;
+}

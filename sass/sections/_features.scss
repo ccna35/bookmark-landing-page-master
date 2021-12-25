@@ -1,0 +1,43 @@
+@use "../custom" as *;
+
+.features {
+  ul {
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+    }
+  }
+  .row {
+    gap: 4rem;
+  }
+  .feature-img {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 26%;
+      left: -32%;
+      width: 30vw;
+      height: 20vh;
+      background-color: #5368df;
+      z-index: -1;
+      border-radius: 0 200px 200px 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  ul {
+    width: fit-content;
+  }
+  .nav-link {
+    color: $light;
+    &.active {
+      border-color: transparent;
+      border-bottom: 3px solid $secondary;
+    }
+    &:hover {
+      border: none;
+      color: $secondary;
+    }
+  }
+}

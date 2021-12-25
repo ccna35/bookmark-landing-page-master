@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       <div class="container">
         <a class="navbar-brand" href="#"
-          ><img src="./images/logo-bookmark.svg" alt=""
+          ><img src="./sass/images/logo-bookmark.svg" alt=""
         /></a>
         <button
           class="navbar-toggler"
@@ -40,23 +40,236 @@
             <a class="nav-link ms-4 text-uppercase" href="#">Features</a>
             <a class="nav-link ms-4 text-uppercase" href="#">Pricing</a>
             <a class="nav-link ms-4 text-uppercase" href="#">Contact</a>
-            <a
-              class="
-                nav-link
-                ms-4
-                btn
-                bg-secondary
-                px-4
-                text-white text-uppercase
-              "
-              href="#"
+            <a class="ms-4 btn px-4 text-uppercase mynav_btn shadow-sm" href="#"
               >Login</a
             >
           </div>
         </div>
       </div>
     </nav>
-
+    <main>
+      <!-- Hero section -->
+      <section class="hero mt-7">
+        <div class="container">
+          <div class="row">
+            <div
+              class="
+                col-sm-12 col-lg-6
+                align-self-center
+                text-sm-center text-lg-start
+              "
+            >
+              <div class="jumbotron">
+                <h1 class="display-6 fw-bold heading">
+                  A Simple Bookmark Manager
+                </h1>
+                <p class="lead text-secondary display-9 my-4">
+                  A clean and simple interface to organize your favourite
+                  websites. Open a new browser tab and see your sites load
+                  instantly. Try it for free.
+                </p>
+                <div class="d-flex justify-content-lg-start hero__btns">
+                  <p class="lead me-4">
+                    <a class="btn btn-primary btn" href="#" role="button"
+                      >Get it on Chrome</a
+                    >
+                  </p>
+                  <p class="lead">
+                    <a
+                      class="btn btn-secondary btn shadow-sm"
+                      href="#"
+                      role="button"
+                      >Get it on Firefox</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <img
+                src="./sass/images/illustration-hero.svg"
+                class="w-100"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Features section -->
+      <section class="features mt-12 text-center">
+        <div class="container">
+          <div class="jumbotron mb-5">
+            <h1 class="display-8 fw-bold mb-3 heading">Features</h1>
+            <p class="lead text-secondary display-9 m-auto lh-base">
+              Our aim is to make it quick and easy for you to access your
+              favourite websites. Your bookmarks sync between your devices so
+              you can access them on the go.
+            </p>
+          </div>
+          <ul
+            class="nav nav-tabs m-auto mb-5 justify-content-sm-center"
+            id="myTab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link px-5 py-3 active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home"
+                type="button"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+              >
+                Simple Bookmarking
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link px-5 py-3"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+              >
+                Speedy Searching
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link px-5 py-3"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact"
+                type="button"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+              >
+                Easy Sharing
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <div class="row flex-column flex-md-row">
+                <div class="col feature-img">
+                  <img
+                    src="./sass/images/illustration-features-tab-1.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="col align-self-end mb-4">
+                  <div class="jumbotron text-start">
+                    <h1 class="display-8 fw-bold heading">
+                      Bookmark in one click
+                    </h1>
+                    <p class="lead text-secondary display-9 my-4">
+                      Organize your bookmarks however you like. Our simple
+                      drag-and-drop interface gives you complete control over
+                      how you manage your favourite sites.
+                    </p>
+                    <div class="d-flex justify-content-start">
+                      <p class="lead me-4">
+                        <a
+                          class="btn btn-primary btn d-none d-lg-block"
+                          href="#"
+                          role="button"
+                          >More Info
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <div class="row flex-column flex-md-row">
+                <div class="col feature-img">
+                  <img
+                    src="./sass/images/illustration-features-tab-2.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="col align-self-center mb-4">
+                  <div class="jumbotron text-start">
+                    <h1 class="display-8 fw-bold heading">
+                      Intelligent search
+                    </h1>
+                    <p class="lead text-secondary display-9 my-4">
+                      Our powerful search feature will help you find saved sites
+                      in no time at all. No need to trawl through all of your
+                      bookmarks.
+                    </p>
+                    <div class="d-flex justify-content-start">
+                      <p class="lead me-4">
+                        <a
+                          class="btn btn-primary btn d-none d-lg-block"
+                          href="#"
+                          role="button"
+                          >More Info
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="contact"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              <div class="row flex-column flex-md-row">
+                <div class="col feature-img">
+                  <img
+                    src="./sass/images/illustration-features-tab-3.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="col align-self-center mb-4">
+                  <div class="jumbotron text-start">
+                    <h1 class="display-8 fw-bold heading">
+                      Share your bookmarks
+                    </h1>
+                    <p class="lead text-secondary display-9 my-4">
+                      Easily share your bookmarks and collections with others.
+                      Create a shareable link that you can send at the click of
+                      a button.
+                    </p>
+                    <div class="d-flex justify-content-start">
+                      <p class="lead me-4">
+                        <a
+                          class="btn btn-primary btn d-none d-lg-block"
+                          href="#"
+                          role="button"
+                          >More Info
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
