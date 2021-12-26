@@ -13886,6 +13886,7 @@ nav .overlay-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5rem 0;
 }
 nav .overlay-navbar .navbar-toggler-icon-close {
   z-index: 999;
