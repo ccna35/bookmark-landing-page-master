@@ -27,6 +27,7 @@ footer {
         letter-spacing: 1px;
         @include media-breakpoint-down(md) {
           font-size: 1rem;
+          display: block !important;
         }
       }
     }

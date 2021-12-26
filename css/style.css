@@ -14174,9 +14174,14 @@ nav .mobile-overlay-socials {
     margin: 0;
   }
 }
+@media (max-width: 991.98px) {
+  .subscribe form {
+    gap: 0.5rem;
+  }
+}
 .subscribe form button {
   margin: 0 !important;
-  width: fit-content;
+  width: 100%;
 }
 @media (max-width: 767.98px) {
   .subscribe form button {
@@ -14216,6 +14221,7 @@ footer ul li a {
 @media (max-width: 767.98px) {
   footer ul li a {
     font-size: 1rem;
+    display: block !important;
   }
 }
 footer .footer_icons {

@@ -5,11 +5,7 @@ const myNavLogo = document.querySelector(".myNavLogo");
 const hiddenMenuSocials = document.querySelector(".mobile-overlay-socials");
 const overlayNavbar = document.querySelector(".overlay-navbar");
 
-let active = false;
-
 burgerIcon.addEventListener("click", () => {
-  // closeIcon.classList.add("active");
-  // myNavLogo.classList.add("active");
   hiddenMenuSocials.classList.add("active");
   burgerIcon.style.display = "none";
   overlayNavbar.classList.add("active");
@@ -17,8 +13,6 @@ burgerIcon.addEventListener("click", () => {
 });
 
 closeIcon.addEventListener("click", () => {
-  // closeIcon.classList.remove("active");
-  // myNavLogo.classList.remove("active");
   hiddenMenuSocials.classList.remove("active");
   hiddenMobileMenu.classList.remove("show");
   hiddenMobileMenu.classList.remove("mobile-menu");
