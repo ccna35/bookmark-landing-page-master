@@ -13882,8 +13882,62 @@ textarea.form-control-lg {
 .navbar-toggler {
   box-shadow: 0 0 0 0 !important;
 }
-.navbar-toggler .navbar-toggler-icon-close {
+nav .overlay-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .overlay-navbar .navbar-toggler-icon-close {
+  z-index: 999;
   display: none;
+}
+nav .overlay-navbar .navbar-toggler-icon-close.active {
+  display: block;
+}
+nav .overlay-navbar .myNavLogo {
+  display: none;
+}
+nav .overlay-navbar .myNavLogo.active {
+  display: block;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 22;
+  background: #252b46d9;
+}
+.mobile-menu .navbar-nav {
+  text-align: center;
+  transform: translateY(10rem);
+}
+.mobile-menu .navbar-nav > * {
+  margin-left: 0 !important;
+}
+.mobile-menu .mynav_btn {
+  background-color: transparent;
+  border: 2px solid white;
+  letter-spacing: 1px;
+}
+.mobile-menu .nav-link {
+  color: white !important;
+  display: none;
+  padding: 1rem 0;
+}
+.mobile-menu .nav-link:not(:first-child) {
+  display: block;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.mobile-menu .nav-link:not(:last-child) {
+  border-top: 1px solid #9194a1;
+}
+.mobile-menu .nav-link:nth-child(4) {
+  border-bottom: 1px solid #9194a1;
+  margin-bottom: 2rem !important;
 }
 
 .hero {

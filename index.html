@@ -18,6 +18,7 @@
         <a class="navbar-brand" href="#"
           ><img src="./sass/images/logo-bookmark.svg" alt=""
         /></a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -28,24 +29,36 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon-close"
-            ><img src="./sass/images/icon-close.svg"
-          /></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-end"
+          class="collapse navbar-collapse justify-content-end mobile-menu"
           id="navbarNavAltMarkup"
         >
-          <div class="navbar-nav">
-            <a class="nav-link ms-4 text-uppercase" aria-current="page" href="#"
-              >Home</a
-            >
-            <a class="nav-link ms-4 text-uppercase" href="#">Features</a>
-            <a class="nav-link ms-4 text-uppercase" href="#">Pricing</a>
-            <a class="nav-link ms-4 text-uppercase" href="#">Contact</a>
-            <a class="ms-4 btn px-4 text-uppercase mynav_btn shadow-sm" href="#"
-              >Login</a
-            >
+          <div class="container">
+            <div class="overlay-navbar">
+              <a class="navbar-brand myNavLogo" href="#"
+                ><img src="./sass/images/logo-bookmark-mobile.svg" alt=""
+              /></a>
+              <span class="navbar-toggler-icon-close"
+                ><img src="./sass/images/icon-close.svg"
+              /></span>
+            </div>
+            <div class="navbar-nav">
+              <a
+                class="nav-link ms-4 text-uppercase"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+              <a class="nav-link ms-4 text-uppercase" href="#">Features</a>
+              <a class="nav-link ms-4 text-uppercase" href="#">Pricing</a>
+              <a class="nav-link ms-4 text-uppercase" href="#">Contact</a>
+              <a
+                class="ms-4 btn px-4 text-uppercase mynav_btn shadow-sm"
+                href="#"
+                >Login</a
+              >
+            </div>
           </div>
         </div>
       </div>
