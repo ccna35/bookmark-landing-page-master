@@ -36,6 +36,15 @@ nav {
   width: 100vw;
   z-index: 22;
   background: #252b46f5;
+  .mobile-overlay-socials {
+    display: none;
+    &.active {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      transform: translateY(52vh);
+    }
+  }
   .navbar-nav {
     & > * {
       margin-left: 0 !important;
