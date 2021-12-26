@@ -18,6 +18,7 @@ burgerIcon.addEventListener("click", () => {
   myNavLogo.classList.add("active");
   hiddenMenuSocials.classList.add("active");
   burgerIcon.style.display = "none";
+  hiddenMobileMenu.classList.add("mobile-menu");
 });
 
 closeIcon.addEventListener("click", () => {
@@ -25,5 +26,6 @@ closeIcon.addEventListener("click", () => {
   myNavLogo.classList.remove("active");
   hiddenMenuSocials.classList.remove("active");
   hiddenMobileMenu.classList.remove("show");
+  hiddenMobileMenu.classList.remove("mobile-menu");
   burgerIcon.style.display = "block";
 });
