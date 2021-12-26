@@ -28,6 +28,9 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon-close"
+            ><img src="./sass/images/icon-close.svg"
+          /></span>
         </button>
         <div
           class="collapse navbar-collapse justify-content-end"
@@ -70,13 +73,13 @@
                 </p>
                 <div class="d-flex justify-content-lg-start hero__btns">
                   <p class="lead me-4">
-                    <a class="btn btn-primary btn" href="#" role="button"
+                    <a class="btn btn-primary" href="#" role="button"
                       >Get it on Chrome</a
                     >
                   </p>
                   <p class="lead">
                     <a
-                      class="btn btn-secondary btn shadow-sm"
+                      class="btn btn-secondary shadow-sm"
                       href="#"
                       role="button"
                       >Get it on Firefox</a
@@ -85,7 +88,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-6">
+            <div class="col-sm-12 col-lg-6 last-col">
               <img
                 src="./sass/images/illustration-hero.svg"
                 class="w-100"
@@ -470,7 +473,7 @@
             </div>
           </div>
           <div class="d-flex justify-content-center">
-            <p class="lead me-4">
+            <p class="lead">
               <a class="btn btn-primary btn" href="#" role="button"
                 >More Info
               </a>
@@ -488,7 +491,7 @@
             </h1>
           </div>
           <form class="row g-3 justify-content-center">
-            <div class="col-auto">
+            <div class="col-12 col-md-6">
               <label for="inputPassword2" class="visually-hidden"
                 >Password</label
               >
@@ -498,10 +501,8 @@
                 placeholder="Enter your email address"
               />
             </div>
-            <div class="col-auto">
-              <button type="submit" class="btn mynav_btn mb-3">
-                Contact Us
-              </button>
+            <div class="col-12 col-md-6">
+              <button type="submit" class="btn mynav_btn">Contact Us</button>
             </div>
           </form>
         </div>
@@ -509,7 +510,7 @@
       <!-- Footer section -->
       <footer>
         <div class="container">
-          <footer
+          <div
             class="
               d-flex
               flex-wrap
@@ -523,23 +524,17 @@
             </div>
             <ul class="nav col-12 col-md-6">
               <li class="nav-item">
-                <a
-                  href="#"
-                  class="nav-link px-2 text-uppercase text-secondary mx-3"
+                <a href="#" class="nav-link px-2 text-uppercase mx-3"
                   >Features</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  href="#"
-                  class="nav-link px-2 text-uppercase text-secondary mx-3"
+                <a href="#" class="nav-link px-2 text-uppercase mx-3"
                   >Pricing</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  href="#"
-                  class="nav-link px-2 text-uppercase text-secondary mx-3"
+                <a href="#" class="nav-link px-2 text-uppercase mx-3"
                   >Contact</a
                 >
               </li>
@@ -562,10 +557,12 @@
                 ><img src="./sass/images/icon-twitter.svg" alt=""
               /></a>
             </div>
-          </footer>
+          </div>
         </div>
       </footer>
     </main>
+    <script src="./main.js
+    "></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

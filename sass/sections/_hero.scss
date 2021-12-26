@@ -2,9 +2,38 @@
 
 .hero {
   overflow-x: clip;
+  .btn-secondary {
+    color: $dark;
+    &:hover {
+      border-color: $dark;
+      background-color: white;
+    }
+  }
   .row {
     @include media-breakpoint-down(sm) {
       flex-direction: column-reverse;
+    }
+    .last-col {
+      position: relative;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 3rem;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 25%;
+        right: -25%;
+        width: 106%;
+        height: 72%;
+        background-color: #5368df;
+        z-index: -1;
+        border-radius: 200px 0 0 200px;
+      }
+      img {
+        @include media-breakpoint-up(lg) {
+          width: 117% !important;
+        }
+      }
     }
   }
   .jumbotron {
@@ -15,23 +44,6 @@
       @include media-breakpoint-down(lg) {
         justify-content: center;
       }
-    }
-  }
-  .col:last-child {
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 30%;
-      right: -25%;
-      width: 35rem;
-      height: 20rem;
-      background-color: #5368df;
-      z-index: -1;
-      border-radius: 200px 0 0 200px;
-    }
-    img {
-      width: 117% !important;
     }
   }
 }

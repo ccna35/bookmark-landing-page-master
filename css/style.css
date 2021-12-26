@@ -13882,13 +13882,47 @@ textarea.form-control-lg {
 .navbar-toggler {
   box-shadow: 0 0 0 0 !important;
 }
+.navbar-toggler .navbar-toggler-icon-close {
+  display: none;
+}
 
 .hero {
   overflow-x: clip;
 }
+.hero .btn-secondary {
+  color: #252b46;
+}
+.hero .btn-secondary:hover {
+  border-color: #252b46;
+  background-color: white;
+}
 @media (max-width: 575.98px) {
   .hero .row {
     flex-direction: column-reverse;
+  }
+}
+.hero .row .last-col {
+  position: relative;
+}
+@media (max-width: 575.98px) {
+  .hero .row .last-col {
+    margin-bottom: 3rem;
+  }
+}
+.hero .row .last-col::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: -25%;
+  width: 106%;
+  height: 72%;
+  background-color: #5368df;
+  z-index: -1;
+  border-radius: 200px 0 0 200px;
+}
+@media (min-width: 992px) {
+  .hero .row .last-col img {
+    width: 117% !important;
   }
 }
 @media (max-width: 575.98px) {
@@ -13901,23 +13935,6 @@ textarea.form-control-lg {
     justify-content: center;
   }
 }
-.hero .col:last-child {
-  position: relative;
-}
-.hero .col:last-child::after {
-  content: "";
-  position: absolute;
-  top: 30%;
-  right: -25%;
-  width: 35rem;
-  height: 20rem;
-  background-color: #5368df;
-  z-index: -1;
-  border-radius: 200px 0 0 200px;
-}
-.hero .col:last-child img {
-  width: 117% !important;
-}
 
 .features .row {
   gap: 4rem;
@@ -13928,10 +13945,10 @@ textarea.form-control-lg {
 .features .feature-img::before {
   content: "";
   position: absolute;
-  top: 26%;
-  left: -32%;
-  width: 30vw;
-  height: 20vh;
+  top: 17%;
+  left: -47%;
+  width: 134%;
+  height: 98%;
   background-color: #5368df;
   z-index: -1;
   border-radius: 0 200px 200px 0;
@@ -14079,6 +14096,21 @@ textarea.form-control-lg {
 .subscribe form {
   width: 100%;
 }
+@media (max-width: 575.98px) {
+  .subscribe form {
+    margin: 0;
+  }
+}
+.subscribe form button {
+  margin: 0 !important;
+  width: fit-content;
+}
+@media (max-width: 767.98px) {
+  .subscribe form button {
+    width: 100% !important;
+  }
+}
+
 footer {
   background-color: #252b46;
 }
@@ -14105,6 +14137,8 @@ footer {
 }
 footer ul li a {
   font-size: 0.9rem;
+  color: white !important;
+  letter-spacing: 1px;
 }
 @media (max-width: 767.98px) {
   footer ul li a {

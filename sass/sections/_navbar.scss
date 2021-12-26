@@ -2,4 +2,7 @@
 
 .navbar-toggler {
   box-shadow: 0 0 0 0 !important;
+  .navbar-toggler-icon-close {
+    display: none;
+  }
 }
